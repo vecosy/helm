@@ -1,0 +1,39 @@
+replicaCount: 1
+
+image:
+  repository: vecosy/vecosy
+  tag: dev
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  http:
+    port: 8080
+  grpc:
+    port: 8081
+
+serviceAccount:
+  create: false
+  name:
+
+podSecurityContext: {}
+
+securityContext: {}
+
+
+ingress:
+  enabled: false
+  annotations: {}
+  hosts:
+    - host: vecosy.local
+      paths: []
+  tls: []
+ 
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

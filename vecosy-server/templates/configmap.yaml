@@ -1,0 +1,17 @@
+kind: ConfigMap 
+apiVersion: v1 
+metadata:
+  name: {{ include "vecosy-server.name" . }}-config
+data:
+  vecosy.yml: |
+    server:
+      rest:
+        address: ":8080"
+      grpc:
+        address: ":8081"
+    repo:
+      remote: 
+{{ include "vecosy-server.repo" . | indent 7 }}
+      local:
+        path: /vecosy_local_repo
+{{ include "vecosy-server.repo-files" . | indent 2}}
