@@ -1,7 +1,7 @@
 kind: ConfigMap 
 apiVersion: v1 
 metadata:
-  name: {{ include "vecosy-server.name" . }}-config
+  name: {{ .Release.Name }}-config
 data:
   vecosy.yml: |
     server:

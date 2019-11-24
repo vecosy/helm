@@ -3,11 +3,11 @@ entries:
   vecosy-server:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-23T11:25:35.779134952+01:00"
+    created: "2019-11-24T11:11:02.353287469+01:00"
     description: Vecosy Server
-    digest: 46cbd0a5e3a68ae48a8d26b1a7f73bd88ed872a50b45a7d5999ffe2b71d3378c
+    digest: 96a3905131f39e133ac9edc20ad565c316be8003c26a7da290cb2651648fcabb
     name: vecosy-server
     urls:
     - vecosy-server-0.1.0.tgz
     version: 0.1.0
-generated: "2019-11-23T11:25:35.778683276+01:00"
+generated: "2019-11-24T11:11:02.352791253+01:00"

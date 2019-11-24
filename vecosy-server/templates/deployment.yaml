@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "vecosy-server.fullname" . }}
+  name: {{ .Release.Name }}
   labels:
 {{ include "vecosy-server.labels" . | indent 4 }}
 spec:
@@ -64,4 +64,4 @@ spec:
       volumes:
         - name: config-dir
           configMap: 
-            name: {{ include "vecosy-server.name" . }}-config
+            name: {{ .Release.Name }}-config
